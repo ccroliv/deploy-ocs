@@ -119,7 +119,7 @@ EOF
 
 setVariaveis()	{
 	cd /inst/pacotes/Packager-for-Unix-master/
-	sed s/OCS_AGENT_TAG=CLIENTE/PERL_VERSION=${OCS_AGENT_TAG_CLIENTE}/g packageOCSAgent.config
+	sed -i s/OCS_AGENT_TAG=CLIENTE/PERL_VERSION=${OCS_AGENT_TAG_CLIENTE}/g packageOCSAgent.config
 	sleep 1
 }
 	
